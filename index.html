@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Website</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 1rem 2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Poster Section */
+        .poster {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            background: #e3e3e3;
+        }
+        .poster img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Product Section */
+        .products-section {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 2rem;
+        }
+        .products-sidebar {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .products-sidebar h3 {
+            margin-bottom: 1rem;
+        }
+        .products-sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .products-sidebar li {
+            margin-bottom: 0.5rem;
+        }
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-card h4 {
+            margin: 0.5rem 0;
+        }
+
+        /* Blog Section */
+        .blog-section {
+            padding: 2rem;
+            background: #f9f9f9;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .blog-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .blog-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .blog-card h4 {
+            margin: 0.5rem;
+        }
+
+        /* Contact Form Section */
+        .contact-section {
+            padding: 2rem;
+        }
+        .contact-section form {
+            max-width: 600px;
+            margin: auto;
+            display: grid;
+            gap: 1rem;
+        }
+        .contact-section input, .contact-section textarea, .contact-section button {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        .contact-section button {
+            background: #ff4d4d;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-section button:hover {
+            background: #e63939;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navbar -->
+    <header>
+        <nav>
+            <div><h1>Grid.</h1></div>
+            <div>
+                <a href="#">Summer</a>
+                <a href="#">Topwear</a>
+                <a href="#">Bottomwear</a>
+                <a href="#">Accessories</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Poster Section -->
+    <section class="poster">
+        <img src="https://via.placeholder.com/1200x400?text=Naruto+Poster" alt="Naruto Poster">
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <!-- Sidebar -->
+        <div class="products-sidebar">
+            <h3>Products</h3>
+            <ul>
+                <li><input type="checkbox"> Women Boyfriend Shirts</li>
+                <li><input type="checkbox"> Women Bralette</li>
+                <li><input type="checkbox"> Women Cargo Jeans</li>
+                <li><input type="checkbox"> Women Joggers</li>
+                <li><input type="checkbox"> Women Denim Jackets</li>
+            </ul>
+        </div>
+        <!-- Product List -->
+        <div class="product-list">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Product 1">
+                <h4>White Bralette Top</h4>
+                <p>₹609</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Product 2">
+                <h4>Cotton Linen Lavender</h4>
+                <p>₹1399</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Product 3">
+                <h4>Korean Pants</h4>
+                <p>₹1999</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Product 4">
+                <h4>Powerpuff Girls Shirt</h4>
+                <p>₹999</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <h2>Fresh from the Blog</h2>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/300x200" alt="Blog 1">
+                <h4>9 Comfy Throws for Cozy Autumn</h4>
+            </div>
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/300x200" alt="Blog 2">
+                <h4>14 Beautiful Bags</h4>
+            </div>
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/300x200" alt="Blog 3">
+                <h4>The Best Gift Ideas</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Telephone">
+            <textarea placeholder="Comments" rows="4"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
+
+
